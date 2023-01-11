@@ -7,6 +7,7 @@ int fibo1(int n) {
   if (n == 0) return 0;
   if (n == 1 || n == 2) return 1;
 
+  // Tính fibo.
   for (int i = 1; i < n; i++) {
     result = num1 + num2;
     num2 = num1;
@@ -24,6 +25,7 @@ int fibo2 (int n) {
   if (n == 0) return 0;
   if (n == 1 || n == 2) return 1;
 
+  // Tính fibo.
   for (int i = 0; i < n; i++) {
     sumTemp = result[i] + result[i+1];
     result.add(sumTemp);
@@ -37,5 +39,6 @@ int fibo3 (int n) {
   if (n == 0) return 0;
   if (n == 1 || n == 2) return 1;
 
-  return fibo(n - 1) + fibo(n - 2);
+  // Tính fibo.
+  return fibo3(n - 1) + fibo3(n - 2);
 }
